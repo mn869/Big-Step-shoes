@@ -1,0 +1,242 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  margin-left: 8%;
+  color: var(--color-white);
+}
+
+.hero__title {
+  font-size: 4.5rem;
+  margin-bottom: var(--space-2);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards 0.3s;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-4);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards 0.6s;
+}
+
+.hero__cta {
+  display: flex;
+  gap: var(--space-2);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards 0.9s;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-white);
+  z-index: 2;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.5s;
+}
+
+.hero__scroll span {
+  margin-bottom: var(--space-1);
+  font-size: 0.875rem;
+}
+
+.hero__scroll svg {
+  animation: bounceDown 2s infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceDown {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+/* Featured section */
+.featured {
+  padding-top: var(--space-7);
+}
+
+.featured__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.featured-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-medium);
+}
+
+.featured-item:hover {
+  transform: translateY(-8px);
+}
+
+.featured-item__image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.featured-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.featured-item:hover .featured-item__image img {
+  transform: scale(1.05);
+}
+
+.featured-item__badge {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.featured-item__content {
+  padding: var(--space-3);
+  background-color: var(--color-white);
+}
+
+.featured-item__content h3 {
+  margin-bottom: var(--space-1);
+}
+
+.featured-item__content p {
+  color: var(--color-gray-600);
+  margin-bottom: var(--space-2);
+  font-size: 0.875rem;
+}
+
+.featured-item__price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: var(--space-1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
+  
+  .featured__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__content {
+    margin-left: 0;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 var(--space-3);
+  }
+  
+  .hero__cta {
+    justify-content: center;
+  }
+  
+  .hero__title {
+    font-size: 3rem;
+  }
+  
+  .featured-item__image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .featured__grid {
+    grid-template-columns: 1fr;
+  }
+}

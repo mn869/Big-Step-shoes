@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Step Shoes | Premium Footwear</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/testimonials.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <span>BIG STEP</span>
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#size-guide">Size Guide</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button class="cart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-count">0</span>
+          </button>
+          <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <h1 class="hero__title">Step Up Your Style</h1>
+        <p class="hero__subtitle">Premium footwear for those who demand more.</p>
+        <div class="hero__cta">
+          <a href="#products" class="btn btn-primary">Shop Collection</a>
+          <a href="#size-guide" class="btn btn-secondary">Size Guide</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Premium Shoes">
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="M19 12l-7 7-7-7"></path></svg>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Collection</h2>
+          <p>Discover our most popular designs</p>
+        </div>
+        <div class="featured__grid">
+          <div class="featured-item">
+            <div class="featured-item__image">
+              <img src="https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Classic Oxford">
+              <div class="featured-item__badge">Bestseller</div>
+            </div>
+            <div class="featured-item__content">
+              <h3>Classic Oxford</h3>
+              <p>Timeless elegance for any occasion</p>
+              <div class="featured-item__price">$199</div>
+              <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="featured-item">
+            <div class="featured-item__image">
+              <img src="https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Urban Runner">
+              <div class="featured-item__badge">New</div>
+            </div>
+            <div class="featured-item__content">
+              <h3>Urban Runner</h3>
+              <p>Performance meets street style</p>
+              <div class="featured-item__price">$179</div>
+              <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="featured-item">
+            <div class="featured-item__image">
+              <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Executive Loafer">
+            </div>
+            <div class="featured-item__content">
+              <h3>Executive Loafer</h3>
+              <p>Comfort and class in perfect harmony</p>
+              <div class="featured-item__price">$229</div>
+              <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Collection</h2>
+          <p>Find your perfect fit from our extensive range</p>
+        </div>
+        <div class="products__filters">
+          <div class="filter">
+            <label for="style-filter">Style</label>
+            <select id="style-filter">
+              <option value="all">All Styles</option>
+              <option value="formal">Formal</option>
+              <option value="casual">Casual</option>
+              <option value="athletic">Athletic</option>
+              <option value="boots">Boots</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="size-filter">Size</label>
+            <select id="size-filter">
+              <option value="all">All Sizes</option>
+              <option value="10-11">10-11 US</option>
+              <option value="12-13">12-13 US</option>
+              <option value="14-15">14-15 US</option>
+              <option value="16+">16+ US</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="color-filter">Color</label>
+            <select id="color-filter">
+              <option value="all">All Colors</option>
+              <option value="black">Black</option>
+              <option value="brown">Brown</option>
+              <option value="navy">Navy</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="products__grid" id="products-grid">
+          <!-- Product items will be populated by JavaScript -->
+        </div>
+        <div class="products__load-more">
+          <button class="btn btn-secondary" id="load-more">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__text">
+            <h2>Our Story</h2>
+            <p>Founded in 2015, Big Step Shoes was born from a simple yet powerful observation: those with larger feet deserved stylish, comfortable footwear options without compromise.</p>
+            <p>Our founder, Michael Torres, struggled for years to find shoes that combined quality, style, and proper sizing. Tired of settling for whatever happened to be available in his size, he set out to create a brand dedicated to solving this problem.</p>
+            <p>Today, Big Step Shoes offers an extensive collection of premium footwear specifically designed for those who wear sizes 10-18. We believe that exceptional style shouldn't be limited by size.</p>
+            <a href="#" class="btn btn-tertiary">Learn More</a>
+          </div>
+          <div class="about__image">
+            <img src="https://images.pexels.com/photos/6347546/pexels-photo-6347546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Handcrafted shoes">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="size-guide" id="size-guide">
+      <div class="container">
+        <div class="section-header">
+          <h2>Size Guide</h2>
+          <p>Find your perfect fit with our comprehensive sizing information</p>
+        </div>
+        <div class="size-guide__content">
+          <div class="size-guide__info">
+            <p>At Big Step Shoes, we understand the importance of a proper fit. Our shoes are available in sizes 10-18 US, with regular and wide width options.</p>
+            <p>Use the chart below to find your perfect size. For best results, measure your foot in the evening when feet tend to be at their largest.</p>
+          </div>
+          <div class="size-guide__table">
+            <table>
+              <thead>
+                <tr>
+                  <th>US Size</th>
+                  <th>UK Size</th>
+                  <th>EU Size</th>
+                  <th>Foot Length (inches)</th>
+                  <th>Foot Length (cm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td>9</td>
+                  <td>44</td>
+                  <td>10.9"</td>
+                  <td>27.8 cm</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>10</td>
+                  <td>45</td>
+                  <td>11.3"</td>
+                  <td>28.6 cm</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>11</td>
+                  <td>46</td>
+                  <td>11.6"</td>
+                  <td>29.4 cm</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>12</td>
+                  <td>47</td>
+                  <td>12.0"</td>
+                  <td>30.2 cm</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>13</td>
+                  <td>48</td>
+                  <td>12.3"</td>
+                  <td>31.1 cm</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>14</td>
+                  <td>49</td>
+                  <td>12.7"</td>
+                  <td>32.0 cm</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>15</td>
+                  <td>50</td>
+                  <td>13.0"</td>
+                  <td>33.0 cm</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>16</td>
+                  <td>51</td>
+                  <td>13.4"</td>
+                  <td>33.9 cm</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>17</td>
+                  <td>52</td>
+                  <td>13.7"</td>
+                  <td>34.8 cm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+          <p>Hear from people who've found their perfect fit</p>
+        </div>
+        <div class="testimonials__slider" id="testimonials-slider">
+          <div class="testimonials__slide active">
+            <div class="testimonial">
+              <div class="testimonial__quote">"After years of settling for whatever shoes came in my size, Big Step has transformed my footwear game. These are hands down the most comfortable dress shoes I've ever owned."</div>
+              <div class="testimonial__author">
+                <div class="testimonial__author-name">James W.</div>
+                <div class="testimonial__author-detail">Size 14, Executive Loafer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__slide">
+            <div class="testimonial">
+              <div class="testimonial__quote">"Finding stylish athletic shoes in size 16 was impossible until I discovered Big Step. Now I get compliments on my shoes instead of just their size!"</div>
+              <div class="testimonial__author">
+                <div class="testimonial__author-name">Marcus T.</div>
+                <div class="testimonial__author-detail">Size 16, Urban Runner</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__slide">
+            <div class="testimonial">
+              <div class="testimonial__quote">"The quality is exceptional. I used to go through shoes quickly, but my Big Steps have lasted over two years now and still look great."</div>
+              <div class="testimonial__author">
+                <div class="testimonial__author-name">David K.</div>
+                <div class="testimonial__author-detail">Size 13, Classic Oxford</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__controls">
+          <button class="testimonial-prev" id="testimonial-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="testimonials__dots" id="testimonial-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="testimonial-next" id="testimonial-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter__content">
+          <h2>Join the Big Step Family</h2>
+          <p>Subscribe to our newsletter for early access to new releases, exclusive discounts, and sizing tips.</p>
+          <form class="newsletter__form" id="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter__confirmation" id="newsletter-confirmation">
+            <p>Thank you for subscribing! Check your inbox soon for a special welcome offer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <div class="footer__logo">
+              <span>BIG STEP</span>
+            </div>
+            <p>Premium footwear for larger sizes. Style without compromise.</p>
+            <div class="footer__social">
+              <a href="#" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Formal Collection</a></li>
+              <li><a href="#">Casual Styles</a></li>
+              <li><a href="#">Athletic Range</a></li>
+              <li><a href="#">Boots</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Craftsmanship</a></li>
+              <li><a href="#">Materials</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">Care Instructions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            <p>&copy; 2025 Big Step Shoes. All rights reserved.</p>
+          </div>
+          <div class="footer__links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
